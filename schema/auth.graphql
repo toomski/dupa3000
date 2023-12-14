@@ -1,0 +1,15 @@
+extend type Mutation {
+  login(email: String!, password: String!): Token
+  register(
+      email: String!,
+      password: String!,
+      firstName: String!
+      lastName: String!
+      newsletter: Boolean
+      remember: Boolean
+  ): Token
+}
+
+type Token {
+   token: String!
+}
